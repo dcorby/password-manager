@@ -1,0 +1,92 @@
+@use '../../styles' as styles;
+
+@media (min-width: 1130px) {
+  div#wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  div.child.first {
+    flex: 4;
+    max-width: 40%;
+  }
+  div.child.second {
+    flex: 6;
+    max-width: 60%;
+  }
+}
+
+div.child {
+  text-align: center;
+  padding-top: 30px;
+}
+
+div.inner {
+  display: inline-block;
+  text-align: left;
+}
+
+p.center {
+  text-align: center;
+}
+
+div.features {
+  margin-top: 45px;
+}
+
+mat-icon {
+  transform: scale(2.0);
+}
+
+p.headline1 {
+  font-size: 3em;
+  line-height: 1em;
+  margin: 0.2em 0;
+}
+p.headline2 {
+  font-size: 3em;
+  line-height: 1em;
+  font-weight: bold;
+  margin: 0.2em 0;
+}
+div#frame {
+  display: inline-block;
+  width: 80%;
+  position: relative;
+}
+div.child.second {
+  text-align: left;
+}
+
+div.features p {
+  font-size: 1.25em;
+  display: flex;
+}
+
+mat-icon.green {
+  color: green;
+  margin-right: 15px;
+  transform: scale(1.00);
+}
+
+div.buttons {
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button.primary {
+  background-color: styles.$primary;
+  color: #ffffff;
+  padding: 25px 35px;
+}
+
+button.white {
+  border: 1px solid styles.$primary;
+  padding: 25px 35px;
+}
+img#fake-form {
+  position: absolute;
+  left: 25%;
+  top: 40%;
+  width: 50%;
+}

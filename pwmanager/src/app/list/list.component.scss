@@ -1,0 +1,57 @@
+@use '../../styles' as styles;
+
+table {
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  padding: 10px;
+  height: 25px;
+}
+
+th {
+  font-size: 0.9em;
+  color: styles.$light_gray
+}
+
+tr {
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+tr > th:first-child {
+  min-width: 250px;
+  max-width: 420px;
+}
+
+img {
+  width: 25px;
+  margin-right: 20px;
+}
+
+tr > td:first-child {
+  display: flex;
+}
+
+tr > td:first-child > div.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+td {
+  color: styles.$dark_gray;
+}
+
+div.name {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+div.user_or_email {
+  color: styles.$dark_gray;
+  font-size: 0.8em;
+}
+
+

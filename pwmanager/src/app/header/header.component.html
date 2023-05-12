@@ -1,0 +1,18 @@
+<header>
+  <div class="box1">
+    <h1>Password Manager</h1>
+  </div>
+  <div class="box2">
+    <a *ngIf="!isLoggedIn()" routerLink="/login">
+    <button mat-flat-button class="primary">
+    Log in
+    </button>
+    </a>
+    <a *ngIf="isLoggedIn()" (click)="logout()">
+    <button mat-flat-button class="primary">
+    Logout
+    </button>
+    </a>
+  </div>
+</header>
+

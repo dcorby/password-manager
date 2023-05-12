@@ -1,0 +1,25 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+$primary: #266487;
+$light_gray: #999999;
+$dark_gray: #666666;
+$light_blue: #cbebeb;
+
+:root {
+  --mdc-theme-error: #999999;
+}
+
+app-root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}

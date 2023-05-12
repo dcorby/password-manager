@@ -1,0 +1,33 @@
+@use '../../styles' as styles;
+
+div {
+  padding: 10px 10px 10px 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 10px 0 0 0;
+  margin: 0;
+}
+
+ul li {
+  padding: 10px;
+  font-size: 1.15em;
+  font-weight: bold;
+  color: styles.$primary;
+}
+
+ul li a {
+  color: styles.$primary;
+  display: flex;
+  text-decoration: none;
+}
+
+div.box {
+  margin: 0;
+  padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+

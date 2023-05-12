@@ -1,0 +1,18 @@
+@use '../../styles' as styles;
+
+button {
+  margin: 5px;
+}
+button:first-child {
+  margin-left: 10px;
+}
+
+button.primary {
+  background-color: styles.$primary;
+  color: #ffffff;
+}
+
+button.white {
+  background-color: #ffffff;
+  border: 1px solid styles.$primary;
+}

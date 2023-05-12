@@ -1,0 +1,20 @@
+<div>
+  <table>
+    <tr>
+      <th>NAME</th>
+      <th>CATEGORY</th>
+      <th>LAST USED</th>
+    </tr>
+    <tr *ngFor="let site of sites" (click)="selectSite(site.name)">
+      <td>
+        <div class="box"><img src="assets/logos/{{site.name}}.svg"></div>
+        <div class="box">
+          <div class="name">{{site.name}}</div>
+          <div class="user_or_email">{{site.user_or_email}}</div>
+        </div>
+      </td>
+      <td class="category">{{site.category}}</td>
+      <td class="last_used">{{site.last_used}}</td>
+    </tr>
+  </table>
+</div>

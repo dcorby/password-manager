@@ -1,0 +1,7 @@
+<div id="search-component">
+  <mat-form-field appearance="outline">
+    <!-- <mat-label>Search</mat-label> -->
+    <input #searchInput matInput id="search" type="text" placeholder="Search" (input)="search(searchInput.value)" />
+    <mat-icon matSuffix>search</mat-icon>
+  </mat-form-field>
+</div>

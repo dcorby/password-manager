@@ -1,0 +1,38 @@
+@use '../../styles' as styles;
+
+header {
+  background-color: styles.$primary;
+  display: flex;
+  color: #ffffff;
+}
+
+button.primary {
+  background-color: styles.$light_blue;
+  border: 1px solid styles.$primary;
+  color: styles.$primary;
+}
+
+div.box1 {
+  flex: 1;
+  margin-left: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+div.box1 h1 {
+  margin: 0 0 0 10px;
+  padding: 15px 0px;
+}
+
+a {
+  color: #ffffff;
+  font-size: 1.1em;
+}

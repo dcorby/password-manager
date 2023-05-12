@@ -1,0 +1,45 @@
+@use '../styles' as styles;
+
+div#container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+div#main {
+  flex: 1;
+  padding: 25px 0 0 20px;
+  border-left: 1px solid styles.$primary;
+}
+
+div#header {
+  display: flex;
+}
+
+app-menu {
+  background-color: styles.$light_blue;
+}
+
+::ng-deep .mat-mdc-text-field-wrapper.mdc-text-field--outlined {
+  .mat-mdc-form-field-infix {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 44px;
+  }
+}
+
+::ng-deep .mat-form-field.mat-form-field-invalid {
+  .mat-form-field-required-marker {
+      color: black;
+  }
+}
+
+::ng-deep .mat-form-field-appearance-outline.mat-focused {
+  .mdc-notched-outline {
+    box-shadow: 0 0 4px 4px styles.$light_blue;
+  }
+}
+
+::ng-deep .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label {
+  top: 24px;
+}

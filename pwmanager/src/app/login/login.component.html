@@ -1,0 +1,13 @@
+<form [formGroup]="loginForm">
+
+  <h3>Email</h3>
+  <mat-form-field appearance="outline" hideRequiredMarker="true">
+    <input matInput type="text" formControlName="username" autofocus>
+  </mat-form-field>
+  <h3>Password</h3>
+  <mat-form-field appearance="outline" hideRequiredMarker="true">
+    <input matInput type="password" formControlName="password">
+  </mat-form-field>
+
+  <button mat-flat-button class="primary" type="submit" (click)="login()">Log In</button>
+</form>
